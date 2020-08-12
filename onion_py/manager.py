@@ -163,8 +163,8 @@ class Manager:
       document = self.OOO_QUERIES[query](result)
 
       versions = document.version.split('.')
-      if int(versions[0]) > self.OOO_VERSION_MAJOR:
-        raise MajorVersionMismatchError("Received OnionOO Document with version {}, this library only supports up to version {}".format(versions[0],self.OOO_VERSION_MAJOR))
+ #     if int(versions[0]) > self.OOO_VERSION_MAJOR:
+ #       raise MajorVersionMismatchError("Received OnionOO Document with version {}, this library only supports up to version {}".format(versions[0],self.OOO_VERSION_MAJOR))
       return document
     else:
       return None
